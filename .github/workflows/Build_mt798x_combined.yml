@@ -64,7 +64,7 @@ jobs:
           REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
           REPO_BRANCH: openwrt-21.02
         run: |
-          git clone https://github.com/xiangfeidexiaohuo/AE86Wrt.git && mv ./AE86Wrt/* ./ && rm -rf ./AE86Wrt
+          git clone https://github.com/well-tag/TerribleWrt.git && mv ./AE86Wrt/* ./ && rm -rf ./AE86Wrt
           git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt-${{ matrix.soc || matrix.model }}
           cd openwrt-${{ matrix.soc || matrix.model }}
           cp -f ../diy/mt798x/op1.sh ./
