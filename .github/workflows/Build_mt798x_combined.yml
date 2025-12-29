@@ -191,7 +191,7 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: ${{ matrix.soc || matrix.model }}-Firmware
-          path: ${{ matrix.soc || matrix.model }}_out/AE86Wrt-*
+          path: ${{ matrix.soc || matrix.model }}_out/ImmortalWrt-*
       
       - name: Upload Config Artifacts
         uses: actions/upload-artifact@main
