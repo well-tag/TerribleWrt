@@ -48,7 +48,7 @@ jobs:
           REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
           REPO_BRANCH: openwrt-24.10-6.6
         run: |
-          git clone https://github.com/xiangfeidexiaohuo/AE86Wrt.git && mv ./AE86Wrt/* ./ && rm -rf ./AE86Wrt
+          git clone https://github.com/well-tag/TerribleWrt.git && mv ./AE86Wrt/* ./ && rm -rf ./AE86Wrt
           git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt-${{ matrix.type }}
           cd openwrt-${{ matrix.type }}
           cp -f ../diy/mt798x/imm1.sh ./
