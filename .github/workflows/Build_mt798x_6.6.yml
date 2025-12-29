@@ -122,7 +122,7 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: ${{ matrix.type }}-Firmware
-          path: ${{ matrix.type }}_out/AE86Wrt-*
+          path: ${{ matrix.type }}_out/OpenWrt-*
       
       - name: Upload Config Artifacts
         uses: actions/upload-artifact@main
